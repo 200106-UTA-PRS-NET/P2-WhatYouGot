@@ -10,7 +10,7 @@ export class ReviewService {
 
   constructor(private httpClient: HttpClient) { }
 
-  reviewUrl = 'http://fridgethingsapi.azurewebsites.net/api/Reviews/' 
+  reviewUrl = 'https://fridgethingsapi.azurewebsites.net/api/Reviews/' 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };

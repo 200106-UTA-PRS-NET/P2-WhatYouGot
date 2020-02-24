@@ -18,7 +18,10 @@ export class SpoonacularapiService {
 
   //apiKey = 'apiKey=683db520cb5443d595329feb7f9907bb';
   // apiKey = 'apiKey=76aa18cfa10048aebc2fa569d3738526';
-  apiKey = 'apiKey=dd43c4c314084e53a2f2581a986f48ac';
+
+  //apiKey = 'apiKey=dd43c4c314084e53a2f2581a986f48ac';
+
+  apiKey = 'apiKey=d2cd1b5930d04dda9ebc4190ed8cd14c'
   baseUrl = 'https://api.spoonacular.com/recipes/';
   
   //assumes that listOfIngredients will be a comma-separated list of ingredients

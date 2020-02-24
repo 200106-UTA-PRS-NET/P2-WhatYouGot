@@ -11,7 +11,7 @@ export class AccountService {
 
   constructor(private httpClient: HttpClient) { }
 
-  accountUrl = 'http://fridgethingsapi.azurewebsites.net/api/Accounts/' 
+  accountUrl = 'https://fridgethingsapi.azurewebsites.net/api/Accounts/' 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };

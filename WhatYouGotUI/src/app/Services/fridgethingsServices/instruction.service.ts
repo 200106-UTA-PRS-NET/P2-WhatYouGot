@@ -10,7 +10,7 @@ export class InstructionService {
 
   constructor(private httpClient: HttpClient) { }
 
-  instructionUrl = 'http://fridgethingsapi.azurewebsites.net/api/Instructions/' 
+  instructionUrl = 'https://fridgethingsapi.azurewebsites.net/api/Instructions/' 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };

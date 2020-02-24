@@ -1,4 +1,4 @@
-<h3 class="text-center" style="padding: 10px;">My favorites:</h3>
+<!-- <h3 class="text-center" style="padding: 10px;">My favorites:</h3>
 
 <ul class="favorites">
     <li *ngFor="let favorite of favorites">
@@ -7,18 +7,49 @@
         </a>
         <button class="delete" title="Remove from Favorites" (click)="deleteFavorite(favorite.userId, favorite.recipeId)">Delete</button>
     </li>
-</ul>
+</ul> -->
 
-<!-- 
+<!-- Bootstrap -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-6">
+
+            <h3 style="padding: 10px; text-align: center;">My Favorites:</h3>
+            <div *ngIf='favorites != null'>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" *ngFor="let favorite of favorites">
+                    <div style="text-align: center;">
+                        <a routerLink="/recipe/{{favorite.recipeId}}">
+                            {{favorite.recipeId}}
+                        </a>
+                        <button class="delete btn btn-warning" title="Remove from Favorites" (click)="deleteFavorite(favorite.userId, favorite.recipeId)">Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+            <div *ngIf='reviews == null'>
+                <div style="text-align: center; color: lightslategray;" *ngIf='spRecipes === null'>
+                    <em>(No recipes received from Spoonacular)</em>
+                </div>
+            </div>
+
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+
+
 <div *ngIf='  favoriteRecipes != null'>   
     <li *ngFor="let rec of favoriteRecipes">
-        <a routerLink="/recipie/{{rec.id}}">
-            {{rec.id}}
-        </a>
         {{rec.title}}
         <td><img src="{{recipe.image}}" class="img-responsive" /></td>
         <button class="delete" title="Remove from Favorites" (click)="deleteFavorite(favorite.userId, favorite.recipeId)">Delete</button>
     </li>
 </div>
 
--->

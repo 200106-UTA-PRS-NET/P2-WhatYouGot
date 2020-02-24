@@ -61,6 +61,7 @@ export class FavoritesListComponent implements OnInit {
 
   deleteFavorite(userId: number, recipeId: number) {
     this.favoriteService.deleteFavorite(userId, recipeId).subscribe();
+    location.reload();
   }
 
 }

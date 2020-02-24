@@ -10,7 +10,7 @@ export class FavoriteService {
 
   constructor(private httpClient: HttpClient) { }
 
-  favoriteUrl = 'http://fridgethingsapi.azurewebsites.net/api/Favorites/' 
+  favoriteUrl = 'https://fridgethingsapi.azurewebsites.net/api/Favorites/' 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };

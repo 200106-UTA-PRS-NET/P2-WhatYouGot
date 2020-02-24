@@ -10,7 +10,7 @@ export class IngredientService {
 
   constructor(private httpClient: HttpClient) { }
 
-  ingredientUrl = 'http://fridgethingsapi.azurewebsites.net/api/Ingredients/' 
+  ingredientUrl = 'https://fridgethingsapi.azurewebsites.net/api/Ingredients/' 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
